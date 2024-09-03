@@ -13,4 +13,9 @@ public class Tabuleiro
 
     public int NumeroLinhas { get; set; }
     public int NumeroColunas { get; set; }
+
+    public Peca PegarPeca(int linha, int coluna)
+    {
+        return pecas[linha, coluna];
+    }
 }
